@@ -1,0 +1,87 @@
+
+/* Get rid of border from other pages since pic butts up against header*/
+.masthead-wrap {
+  border: none;
+  margin-bottom: 0;
+}
+
+/* Stories JumboTron and Title */
+.stories-tron {
+  background: url("../img/stories-main.jpg") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  text-align: center;
+}
+
+.callout {
+  padding-top: 150px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Callout to add a story */
+.storyAddWrap {
+  margin: 30px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.add {
+  display: inline-block;
+  color: #777675;
+  font-size: 1.1rem;
+  border: 2px solid #57737e;
+  padding: 7px;
+  letter-spacing: 1px;
+}
+
+.add a {
+  color: #57737e;
+}
+
+/* Stories that users will add */
+.taleWrap {
+  margin: 0 auto 40px;
+  width: 85%;
+  border: 1px solid #b2a7a2;
+  padding: 4px 12px;
+  color: #777675;
+}
+
+.name {
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 510px) {
+  .callout {
+    padding-top: 170px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .add {
+    padding: 15px;
+  }
+
+  .taleWrap {
+    width: 75%;
+    text-align: center;
+  }
+
+  .stories-tron {
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (min-width: 620px) {
+  .stories-tron {
+    background: url("../img/stories-main2.jpg") no-repeat center;
+    background-size: cover;
+    /* height: 60vh; */
+  }
+}
