@@ -1,0 +1,91 @@
+
+/* Honors Callout and Explaination of Page */
+
+.explain {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70%;
+  font-size: .8rem;
+}
+
+.honors-title {
+  background: url("../img/honors-main.jpg") no-repeat center;
+  background-size: contain;
+  height: 40vh;
+  text-align: center;
+}
+
+.callout {
+  padding-top: 120px;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* Honors Grid */
+
+.ind-honors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+.test {
+  height: auto;
+  width: 100%;
+}
+
+.stock {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  background-color: grey;
+  padding: 5px 5px;
+}
+
+.test:hover .stock {
+  opacity: 0.3;
+}
+
+.test:hover .middle {
+  opacity: 1;
+}
+
+/* Media Query */
+@media only screen and (min-width: 450px) {
+
+    .explain {
+      font-size: 1rem;
+    }
+
+    .honors-title {
+        height: 40vh;
+        margin-bottom: 5px;
+      }
+
+    .callout {
+        padding-top: 170px;
+        color: #ffffff;
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+      }
+
+    .ind-honors {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        max-width: 80%;
+        margin: 50px auto;
+      }
+}
