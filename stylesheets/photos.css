@@ -1,0 +1,192 @@
+/* Get rid of border from other pages since pic butts up against header*/
+.masthead-wrap {
+  border: none;
+  margin-bottom: 0;
+}
+
+/* Photos Callout and Explaination of Page */
+.photos-tron {
+  background: url("../img/photos-main2.jpeg") no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+}
+
+.callout {
+  padding-top: 250px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Callout to add a photo */
+.photoAddWrap {
+  margin: 20px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.add {
+  display: inline-block;
+  color: #777675;
+  font-size: 1.1rem;
+  border: 2px solid #57737e;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.add a {
+  color: #57737e;
+}
+
+/* Photos Grid */
+
+/* .ind-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+.test {
+  height: auto;
+  width: 100%;
+}
+
+.stock {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+.close {
+  background: none;
+  color: black;
+  border: 0;
+}
+.gallery {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+}
+.item {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+.item img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item__overlay {
+  background: #ffc60032;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: 0.2s;
+  transform: translateY(100%);
+}
+.item__overlay button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+}
+.item:hover .item__overlay {
+  transform: translateY(0);
+}
+.item.v2 {
+  grid-row: span 3;
+}
+.item.v3 {
+  grid-row: span 5;
+}
+.item.v4 {
+  grid-row: span 4;
+}
+.item.h2 {
+  grid-column: span 3;
+}
+.item.h3 {
+  grid-column: span 5;
+}
+.item.h4 {
+  grid-column: span 4;
+}
+.overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.overlay-inner {
+  background: white;
+  width: 700px;
+  padding: 20px;
+}
+.overlay img {
+  width: 100%;
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 510px) {
+  .callout {
+    padding-top: 300px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .add {
+    padding: 15px;
+  }
+
+  .photos-tron {
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (min-width: 620px) {
+  .photos-tron {
+    background: url("../img/photos-main.jpeg") no-repeat center;
+    background-size: cover;
+    height: 60vh;
+  }
+}

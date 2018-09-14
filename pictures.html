@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Debbie Scoppechio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/mainmenu.css">
+  <link rel="stylesheet" href="stylesheets/photos.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="masthead-wrap">
+      <div class="masthead-container">
+        <h2 class="title">DEBBIE SCOPPECHIO</h2>
+        <a class="menu trigger" id="menu">MENU</a>
+        <a class="hamburger trig"><img src="img/ham-icon.png" class="icon"></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="menuState">
+    <ul id="nav">
+      <li><a href="index.html">Home</a> |<li>
+      <li><a href="about.html">About</a> |<li>
+      <li><a href="pictures.html">Pictures</a>  | <li>
+      <li><a href="stories.html">Stories</a>  | <li>
+      <li><a href="honors.html">Honors</a><li>
+    </ul>
+  </div>
+
+  <div class="mobile">
+     <ul id="mobileNav">
+       <li><a href="index.html">Home</a><li>
+       <li><a href="about.html">About</a><li>
+       <li><a href="pictures.html">Pictures</a><li>
+       <li><a href="stories.html">Stories</a><li>
+       <li><a href="honors.html">Honors</a><li>
+     </ul>
+  </div>
+
+
+  <div class="photos-tron">
+      <h2 class="callout">LOREM IPSEM DOLAR SET</h2>
+  </div>
+
+  <div class="photoAddWrap">
+    <p class="add">Share your favorite pictures of Debbie. She'd love to see <a href="#" id="upload_widget_opener">them</a>.</p>
+  </div>
+
+  <div>
+    <img src="https://res.cloudinary.com/dhvgjssfm/image/upload/v1536861693/deb/1_bd8nze.jpg">
+  </div>
+
+  <div class="overlay">
+    <div class="overlay-inner">
+      <button class="close">× Close</button>
+      <img>
+    </div>
+  </div>
+
+  <section class="gallery">
+  </section>
+
+
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/photogrid.js"></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      document.getElementById("upload_widget_opener").addEventListener("click", function() {
+        cloudinary.openUploadWidget({ cloud_name: 'dhvgjssfm', upload_preset: 'kpdbvlwe', cropping: true, sources:[ 'local', 'url', 'facebook']},
+          function(error, result) { console.log(error, result) });
+      }, false);
+    </script>
+  </body>
+
+</html>

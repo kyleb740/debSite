@@ -1,0 +1,141 @@
+.pic {
+  width: 60%;
+  height: auto;
+}
+
+.quotes {
+  width: 24px;
+  height: auto;
+  padding-left: 10px;
+}
+
+/* Section 1 */
+.debQuote {
+  text-align: right;
+  padding: 0 10px 0 10px;
+  font-family: Rockwell,sans-serif,Georgia,serif;
+  letter-spacing: 1px;
+  font-size: .9rem;
+}
+
+.floatR {
+  float: right;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.last {
+  float: right;
+  padding-right: 5px;
+}
+
+/* Section 2 */
+
+.hand {
+  width: 50%;
+  height: auto;
+  margin: -30px auto -10px 40%;
+  z-index: 1000;
+}
+
+.debQuote2 {
+  margin: 0;
+  text-align: center;
+  font-size: .9rem;
+  padding:  20px;
+  font-family: Rockwell,sans-serif,Georgia,serif;
+  letter-spacing: 1px;
+  background-color: #b2a7a2;
+}
+
+/* Section 3 */
+.section3 {
+  margin-top: 20px;
+}
+
+.pic3 {
+  width: 50%;
+  height: auto;
+  max-width: 300px;
+}
+
+footer {
+  background-color: #dddad7;
+  text-align: center;
+  margin-top: -4px;
+  padding: 20px;
+}
+
+
+@media only screen and (min-width: 550px) {
+    .section1 {
+      width: 70%;
+      margin: 0 auto -4px auto;
+    }
+
+    .pic {
+      width: 50%;
+      height: auto;
+    }
+
+    .debQuote {
+      text-align: left;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .section2 {
+      background-color: #bab4af;
+      min-height: 300px;
+    }
+
+    .big {
+      width: 70%;
+      margin: auto;
+    }
+
+    .debQuote2 {
+      margin-left: 5%;
+      width: 30%;
+      background-color: inherit;
+      padding: 40px 0;
+    }
+
+    .hand {
+      width: 50%;
+      margin: 0;
+      float: right;
+      overflow: auto;
+    }
+
+
+    .section3 {
+      margin: 30px auto 0 auto;
+      width: 70%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .pic {
+      width: 40%;
+    }
+
+    .floatR {
+      margin: 20% 10% 0 0;
+    }
+
+    .section2 {
+      min-height: 400px;
+    }
+
+    .debQuote2 {
+      padding-top: 15%;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    .section3 {
+      margin-top: 25%;
+    }
+
+}
