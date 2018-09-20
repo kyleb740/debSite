@@ -1,4 +1,4 @@
-.pic {
+.pic1 {
   width: 60%;
   height: auto;
 }
@@ -15,13 +15,20 @@
   padding: 0 10px 0 10px;
   font-family: Rockwell,sans-serif,Georgia,serif;
   letter-spacing: 1px;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .floatR {
   float: right;
   width: 40%;
   margin-top: 30px;
+}
+
+.float2 {
+  float: right;
+  width: 50%;
+  margin-top: 10px;
+  clear: both;
 }
 
 .last {
@@ -49,11 +56,8 @@
 }
 
 /* Section 3 */
-.section3 {
-  margin-top: 20px;
-}
-
 .pic3 {
+  margin-top: 10px;
   width: 50%;
   height: auto;
   max-width: 300px;
@@ -73,14 +77,14 @@ footer {
       margin: 0 auto -4px auto;
     }
 
-    .pic {
+    .pic1 {
       width: 50%;
       height: auto;
     }
 
     .debQuote {
       text-align: left;
-      font-size: 1.1rem;
+      font-size: 1rem;
       letter-spacing: 1px;
     }
 
@@ -90,7 +94,7 @@ footer {
     }
 
     .big {
-      width: 70%;
+      width: 90%;
       margin: auto;
     }
 
@@ -102,7 +106,7 @@ footer {
     }
 
     .hand {
-      width: 50%;
+      width: 60%;
       margin: 0;
       float: right;
       overflow: auto;
@@ -110,22 +114,30 @@ footer {
 
 
     .section3 {
-      margin: 30px auto 0 auto;
+      margin: 15% auto 0 auto;
       width: 70%;
     }
 }
 
-@media only screen and (min-width: 750px) {
-    .pic {
-      width: 40%;
+@media only screen and (min-width: 620px) {
+    .big {
+      width: 75%;
     }
+
+    .hand {
+      width: 60%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+
 
     .floatR {
       margin: 20% 10% 0 0;
     }
 
     .section2 {
-      min-height: 400px;
+      min-height: 375px;
     }
 
     .debQuote2 {
@@ -134,8 +146,32 @@ footer {
       letter-spacing: 1px;
     }
 
-    .section3 {
-      margin-top: 25%;
+}
+
+@media only screen and (min-width: 900px) {
+    .big {
+      width: 70%;
     }
 
+    .hand {
+      width: 55%;
+    }
+
+    .section3 {
+      margin: 12% auto 0 auto;
+    }
+
+    .float2 {
+      margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .pic1 {
+      width: 40%;
+    }
+
+    .hand {
+      width: 45%;
+    }
 }

@@ -5,6 +5,7 @@
   <title>Debbie Scoppechio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheets/mainmenu.css">
   <link rel="stylesheet" href="stylesheets/photos.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -51,24 +52,26 @@
     <p class="add">Share your favorite pictures of Debbie. She'd love to see <a href="#" id="upload_widget_opener">them</a>.</p>
   </div>
 
-  <div>
-    <img src="https://res.cloudinary.com/dhvgjssfm/image/upload/v1536861693/deb/1_bd8nze.jpg">
-  </div>
 
-  <div class="overlay">
+
+
+  <!-- Card Columns -->
+  <div class="container-fluid m-auto p-3 gallery">
+    <!-- <div class="card-columns gallery"> -->
+  </div>
+  <!-- <div class="overlay">
     <div class="overlay-inner">
       <button class="close">× Close</button>
       <img>
     </div>
-  </div>
-
-  <section class="gallery">
-  </section>
+  </div> -->
 
 
-
-    <script src="JS/menu.js"></script>
-    <script src="JS/photogrid.js"></script>
+    <script src="JS/menu.js"></script>s
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -76,6 +79,21 @@
         cloudinary.openUploadWidget({ cloud_name: 'dhvgjssfm', upload_preset: 'kpdbvlwe', cropping: true, sources:[ 'local', 'url', 'facebook']},
           function(error, result) { console.log(error, result) });
       }, false);
+    </script>
+    <script> $.ajax({
+        url: "https://res.cloudinary.com/dhvgjssfm/image/list/debbiephoto.json",
+        success: function(response) {
+          let files = response.resources;
+          let gallery = document.querySelector('.gallery');
+
+          const images = files.map(item =>
+              `<div class="card"><img class="fit" src='https://res.cloudinary.com/dhvgjssfm/${item.public_id}.jpg'></div>`
+            );
+
+          const html = `<div class="card-columns">${images.join('')}</div>`;
+
+          gallery.innerHTML = html;
+      }})
     </script>
   </body>
 

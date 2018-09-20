@@ -1,0 +1,210 @@
+/* Get rid of border from other pages since pic butts up against header*/
+.masthead-wrap {
+  border: none;
+  margin-bottom: 0;
+}
+
+/* About Callout and background photo */
+.photos-tron {
+  background: url("../img/about-main.jpg") no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.callout {
+  padding-top: 300px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Section 1 */
+.section1 {
+  background-color: #d3dbe8;
+}
+
+.word {
+  padding: 10px 20px;
+  font-size: .8rem;
+}
+
+.pic {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+/* Section 2 */
+.brother {
+  padding: 0px;
+  /* margin-bottom: 15px; */
+  box-shadow: 2px 2px 3px #aaaaaa;
+  transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg); /* IE 9 */
+    -webkit-transform: rotate(-1deg); /* Safari */
+
+}
+
+.deb1982  {
+  padding: 0;
+  box-shadow: 2px 2px 3px #aaaaaa;
+  transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Safari */
+}
+
+
+/* Media Query */
+@media only screen and (min-width: 510px) {
+  .callout {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    padding-top:330px;
+  }
+
+
+  .photos-tron {
+    height: 70vh;
+  }
+
+}
+
+@media only screen and (min-width: 520px) {
+  /* Section 1 */
+  .section1Grid {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+
+  .word {
+    font-size: .7rem;
+  }
+
+  .dance {
+    width: 85%;
+    margin-top: -25px;
+    padding-bottom: 0;
+  }
+
+  /* Section 2 */
+  .section2 {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    margin-top: 15px;
+  }
+
+  .section2 div:nth-of-type(1) {
+    order: 2;
+  }
+
+  .section2 div:nth-of-type(2) {
+    order: 1;
+  }
+
+  .section2 div:nth-of-type(3) {
+    order: 6;
+  }
+
+  .section2 div:nth-of-type(4) {
+    order: 3;
+  }
+
+  .section2 div:nth-of-type(5) {
+    order: 5;
+  }
+
+  .section2 div:nth-of-type(6) {
+    order: 4;
+  }
+
+  .type2 {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .dress {
+    width: 100%;
+    margin-left: 7%;
+  }
+
+  .type3 {
+    width: 70%;
+    margin: -150px auto;
+  }
+
+  .inn {
+    width: 80%;
+  }
+
+  .together {
+    margin: 50px 0 20px 7%;;
+    width: 100%;
+   }
+
+  .brother {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .deb1982 {
+    position: relative;
+    z-index: 1;
+    transform: rotate(-6deg);
+      -ms-transform: rotate(-6deg); /* IE 9 */
+      -webkit-transform: rotate(-6deg); /* Safari */
+  }
+
+}
+
+@media only screen and (min-width: 620px) {
+  .photos-tron {
+    height: 60vh;
+  }
+
+  .word {
+    font-size: .9rem;
+  }
+
+  .dance {
+    margin-top: -45px;
+}
+
+@media only screen and (min-width: 800px) {
+  .section1Grid {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section2 {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  .sign {
+    width: 70%;
+  }
+
+  .type3 {
+    margin: -200px auto;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .word {
+    font-size: 1rem;
+  }
+
+  .dance {
+    width: 75%;
+  }
+
+  .type1, .type2 {
+    margin-top: 15%;
+  }
+
+}
