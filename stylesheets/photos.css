@@ -13,7 +13,7 @@
 }
 
 .callout {
-  padding-top: 250px;
+  padding-top: 280px;
   color: #ffffff;
   font-size: 1.1rem;
   margin: 0;
@@ -44,65 +44,10 @@
   width: 100%;
 }
 
-/* Photos Grid */
-
-
-/* .close {
-  background: none;
-  color: black;
-  border: 0;
-}
-.item__overlay {
-  background: #ffc60032;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  position: relative;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  transition: 0.2s;
-  transform: translateY(100%);
-}
-.item__overlay button {
-  background: none;
-  border: 2px solid white;
-  color: white;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 5px;
-}
-.item:hover .item__overlay {
-  transform: translateY(0);
-}
-.overlay {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  z-index: 2;
-}
-.overlay.open {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-.overlay-inner {
-  background: white;
-  width: 70%;
-  padding: 20px;
-}
-.overlay img {
-  width: 100%;
-} */
-
-
 /* Media Query */
 @media only screen and (min-width: 510px) {
   .callout {
-    padding-top: 300px;
+    padding-top: 320px;
     font-size: 1.4rem;
     letter-spacing: 2px;
   }
